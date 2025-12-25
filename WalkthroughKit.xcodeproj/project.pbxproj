@@ -6,14 +6,64 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		D3AE0D432EFD4382004B2F27 /* WalkthroughKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3AE0D042EFD35F8004B2F27 /* WalkthroughKit.framework */; };
+		D3AE0D442EFD4382004B2F27 /* WalkthroughKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D3AE0D042EFD35F8004B2F27 /* WalkthroughKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D3AE0D992EFDA145004B2F27 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = D3AE0D982EFDA108004B2F27 /* README.md */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D3AE0D452EFD4382004B2F27 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D3AE0CFB2EFD35F8004B2F27 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D3AE0D032EFD35F8004B2F27;
+			remoteInfo = WalkthroughKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D3AE0D472EFD4382004B2F27 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				D3AE0D442EFD4382004B2F27 /* WalkthroughKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		D3AE0D042EFD35F8004B2F27 /* WalkthroughKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WalkthroughKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3AE0D2D2EFD434B004B2F27 /* WalkthroughKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WalkthroughKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3AE0D982EFDA108004B2F27 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		D3AE0D3E2EFD434C004B2F27 /* Exceptions for "WalkthroughKitDemo" folder in "WalkthroughKitDemo" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = D3AE0D2C2EFD434B004B2F27 /* WalkthroughKitDemo */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		D3AE0D062EFD35F8004B2F27 /* WalkthroughKit */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = WalkthroughKit;
+			sourceTree = "<group>";
+		};
+		D3AE0D2E2EFD434B004B2F27 /* WalkthroughKitDemo */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				D3AE0D3E2EFD434C004B2F27 /* Exceptions for "WalkthroughKitDemo" folder in "WalkthroughKitDemo" target */,
+			);
+			path = WalkthroughKitDemo;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -26,13 +76,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D3AE0D2A2EFD434B004B2F27 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3AE0D432EFD4382004B2F27 /* WalkthroughKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		D3AE0CFA2EFD35F8004B2F27 = {
 			isa = PBXGroup;
 			children = (
+				D3AE0D982EFDA108004B2F27 /* README.md */,
 				D3AE0D062EFD35F8004B2F27 /* WalkthroughKit */,
+				D3AE0D2E2EFD434B004B2F27 /* WalkthroughKitDemo */,
+				D3AE0D422EFD4382004B2F27 /* Frameworks */,
 				D3AE0D052EFD35F8004B2F27 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -41,8 +102,16 @@
 			isa = PBXGroup;
 			children = (
 				D3AE0D042EFD35F8004B2F27 /* WalkthroughKit.framework */,
+				D3AE0D2D2EFD434B004B2F27 /* WalkthroughKitDemo.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		D3AE0D422EFD4382004B2F27 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -81,6 +150,30 @@
 			productReference = D3AE0D042EFD35F8004B2F27 /* WalkthroughKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		D3AE0D2C2EFD434B004B2F27 /* WalkthroughKitDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D3AE0D3F2EFD434C004B2F27 /* Build configuration list for PBXNativeTarget "WalkthroughKitDemo" */;
+			buildPhases = (
+				D3AE0D292EFD434B004B2F27 /* Sources */,
+				D3AE0D2A2EFD434B004B2F27 /* Frameworks */,
+				D3AE0D2B2EFD434B004B2F27 /* Resources */,
+				D3AE0D472EFD4382004B2F27 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D3AE0D462EFD4382004B2F27 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				D3AE0D2E2EFD434B004B2F27 /* WalkthroughKitDemo */,
+			);
+			name = WalkthroughKitDemo;
+			packageProductDependencies = (
+			);
+			productName = WalkthroughKitDemo;
+			productReference = D3AE0D2D2EFD434B004B2F27 /* WalkthroughKitDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -92,6 +185,9 @@
 				LastUpgradeCheck = 2610;
 				TargetAttributes = {
 					D3AE0D032EFD35F8004B2F27 = {
+						CreatedOnToolsVersion = 26.1;
+					};
+					D3AE0D2C2EFD434B004B2F27 = {
 						CreatedOnToolsVersion = 26.1;
 					};
 				};
@@ -111,12 +207,20 @@
 			projectRoot = "";
 			targets = (
 				D3AE0D032EFD35F8004B2F27 /* WalkthroughKit */,
+				D3AE0D2C2EFD434B004B2F27 /* WalkthroughKitDemo */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		D3AE0D022EFD35F8004B2F27 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3AE0D2B2EFD434B004B2F27 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -130,10 +234,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3AE0D992EFDA145004B2F27 /* README.md in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3AE0D292EFD434B004B2F27 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D3AE0D462EFD4382004B2F27 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D3AE0D032EFD35F8004B2F27 /* WalkthroughKit */;
+			targetProxy = D3AE0D452EFD4382004B2F27 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		D3AE0D0B2EFD35F8004B2F27 /* Debug */ = {
@@ -190,7 +310,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 26.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -251,7 +371,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 26.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -269,6 +389,7 @@
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = X9965D5K3J;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -305,6 +426,7 @@
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = X9965D5K3J;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -335,6 +457,72 @@
 			};
 			name = Release;
 		};
+		D3AE0D402EFD434C004B2F27 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = X9965D5K3J;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WalkthroughKitDemo/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dhruv.walkthroughkit.WalkthroughKitDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D3AE0D412EFD434C004B2F27 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = X9965D5K3J;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WalkthroughKitDemo/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dhruv.walkthroughkit.WalkthroughKitDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -352,6 +540,15 @@
 			buildConfigurations = (
 				D3AE0D0E2EFD35F8004B2F27 /* Debug */,
 				D3AE0D0F2EFD35F8004B2F27 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D3AE0D3F2EFD434C004B2F27 /* Build configuration list for PBXNativeTarget "WalkthroughKitDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3AE0D402EFD434C004B2F27 /* Debug */,
+				D3AE0D412EFD434C004B2F27 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

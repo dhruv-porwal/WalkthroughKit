@@ -1,0 +1,52 @@
+# Xcode
+DerivedData/
+build/
+*.xcworkspace
+*.xcuserstate
+*.xccheckout
+*.moved-aside
+*.xcscmblueprint
+
+# Xcode User data
+*.xcuserdatad/
+*.swiftsourceinfo
+*.DS_Store
+
+# Swift Package Manager
+Packages/
+.swiftpm/
+.build/
+
+# CocoaPods
+Pods/
+Podfile.lock
+
+# Carthage
+Carthage/Build/
+
+# Fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots
+fastlane/test_output
+
+# Playgrounds
+timeline.xctimeline
+playground.xcworkspace
+
+# Archives
+*.xcarchive
+
+# Logs
+*.log
+DerivedData/**/Logs/
+DerivedData/**/Index.noindex/
+
+# DocC
+*.doccarchive
+WalkthroughKit/Resources/WalkthroughKit.docc/*.md   # keep README.md, ignore others
+
+# Misc
+*.swp
+.idea/
+.vscode/
