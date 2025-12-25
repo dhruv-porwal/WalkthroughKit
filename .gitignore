@@ -50,3 +50,4 @@ WalkthroughKit/Resources/WalkthroughKit.docc/*.md   # keep README.md, ignore oth
 *.swp
 .idea/
 .vscode/
+DerivedData/
