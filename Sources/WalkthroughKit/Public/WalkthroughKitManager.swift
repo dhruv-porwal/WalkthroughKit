@@ -23,7 +23,6 @@ public final class WalkthroughKitManager {
         theme: WalkthroughKitTheme = .default,
         onStepShown: ((_ step: Stage) -> Void)? = nil,
         onFinish: @escaping () -> Void) {
-            print("Hey from WalkthroughKitManager")
         
         // Validate and limit number of steps
         guard !items.isEmpty else {
